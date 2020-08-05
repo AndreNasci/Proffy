@@ -23,13 +23,13 @@
 }
 
 /* Asterisco se refere a um elemento qualquer */
-/*
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-*/
+
 
 html, body {
     height: 100vh; /* relativo a view port heigth */
@@ -52,4 +52,12 @@ body, input, button, textarea {
 #container {
     width: 90vw; /* view port width */
     max-width: 700px;
+}
+
+/* Para telas maiores de 700px de largura */
+@media (min-width: 700px) {
+    :root {
+        /* Todo 1rem vai ser relativo a 10px */
+        font-size: 62.5%;
+    }
 }
